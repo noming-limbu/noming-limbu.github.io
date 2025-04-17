@@ -4,13 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Noming Limbu - Frontend Web Designer Portfolio</title>
+    <meta name="description" content="Noming Limbu is an aspiring frontend web designer creating visually appealing and user-friendly websites. Explore my portfolio, projects, and contact details.">
+    <meta name="keywords" content="frontend web designer, web design portfolio, Noming Limbu, user-friendly websites, web development">
+    <meta name="author" content="Noming Limbu">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Noming Limbu - Frontend Web Designer Portfolio">
+    <meta property="og:description" content="Discover Noming Limbu's portfolio showcasing frontend web design skills, creative projects, and contact information.">
+    <meta property="og:image" content="https://khagendralimbu.com.np//images/image.jpeg">
+    <meta property="og:url" content="https://khagendralimbu.com.np/">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Noming Limbu - Frontend Web Designer Portfolio">
+    <meta name="twitter:description" content="Explore Noming Limbu's web design portfolio, featuring creative projects and frontend development skills.">
+    <meta name="twitter:image" content="https://khagendralimbu.com.np//images/image.jpeg">
     <link rel="stylesheet" href="src/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSB7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        html{
+        html {
             scroll-behavior: smooth;
         }
+
         .container {
             width: 86%;
             margin: auto;
@@ -19,52 +37,61 @@
         .verticle {
             writing-mode: vertical-lr;
         }
+
+        #hero {
+            background-image: url("images/hero.avif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(36, 36, 35);
+        }
     </style>
 </head>
 
 <body>
-    <section id="hero" class="bg-gradient-to-r from-white to-yellow-300 pt-4 pb-10">
-        <div class="container">
-            <div class="flex justify-end gap-4 mb-5">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
+    <header id="hero" class="pt-4 pb-10">
+        <div class="container bg-[#ffffff85] p-6 rounded-2xl">
+            <nav class="flex justify-between gap-4 mb-5">
+                <div>
+                    <h1 class="text-lg font-bold">Noming Limbu</h1>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#about" aria-label="About Noming Limbu">About</a>
+                    <a href="#projects" aria-label="Noming Limbu's Projects">Projects</a>
+                    <a href="#contact" aria-label="Contact Noming Limbu">Contact</a>
+                </div>
+            </nav>
 
-            <div class="flex py-10">
+            <div class="flex py-10 items-center h-[80vh]">
                 <div class="space-y-5">
-                    <h1 class="text-3xl font-semibold ">Hello! My name is Noming.</h1>
+                    <h2 class="text-3xl font-semibold">Hello! My name is Noming.</h2>
                     <p>
                         I am an aspiring frontend web designer with a passion for creating visually appealing
-                        and user-friendly websites. Currently honing their skills, I am working on building a
-                        portfolio that showcases their growing expertise in web design. With a keen eye for detail and a
+                        and user-friendly websites. Currently honing my skills, I am working on building a
+                        portfolio that showcases my growing expertise in web design. With a keen eye for detail and a
                         dedication to learning the latest frontend technologies, I am eager to craft digital
                         experiences that are both functional and aesthetically pleasing, setting the foundation for a
                         promising career in web development.
                     </p>
                     <div class="flex gap-10">
-                        <a class="bg-amber-500 rounded-3xl px-4 py-2 text-white" href="">Contact me</a>
-                        <a href="" class="bg-amber-50 border border-amber-500 rounded-3xl px-4 py-2 text-amber-500">My
-                            projects</a>
+                        <a class="bg-amber-500 rounded-3xl px-4 py-2 text-white" href="#contact" aria-label="Contact Noming Limbu">Contact me</a>
+                        <a href="#projects" class="bg-amber-50 border border-amber-500 rounded-3xl px-4 py-2 text-amber-500" aria-label="View Noming Limbu's Projects">My projects</a>
                     </div>
                 </div>
-
                 <div>
-                    <img src="" alt="">
+                    <img src="images/profile.jpg" alt="Noming Limbu Profile Picture" loading="lazy">
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
     <section id="about" class="bg-gray-100 py-20">
         <div class="container grid md:grid-cols-2 items-center gap-10">
             <div>
-                <h2 class="text-4xl mb-6">About</h2>
+                <h2 class="text-4xl mb-6">About Me</h2>
                 <p class="mb-2.5">
                     I'm a 14-year-old who loves to explore, create, and learn. I’m always eager to challenge myself.
                 </p>
                 <p>
-                    <br>
                     I'm currently building skills in web page designing, and I enjoy challenging myself to grow every
                     day. Other than that, I love playing the violin. Each experience from these hobbies teaches me
                     something new, and I bring those lessons into everything I create in my life.
@@ -81,25 +108,24 @@
                     KNOWLEDGE AND
                     <br>
                     EDUCATION.
-
                 </p>
-                <img src="/images/image.jpeg" alt="">
+                <img src="/images/image.jpeg" alt="Noming Limbu Learning Journey" loading="lazy">
             </div>
         </div>
     </section>
 
     <section id="process" class="bg-amber-50 py-20">
         <div class="container">
-            <h2 class="text-3xl">Process</h2>
+            <h2 class="text-3xl">My Design Process</h2>
 
             <div class="text-right grid md:grid-cols-3 mb-6">
                 <div class="col-span-1"></div>
                 <div class="flex items-center gap-5 justify-end col-span-2">
                     <p class="text-2xl">01</p>
                     <div>
-                        <h3 class="border-b mb-4 text-2xl">BRIEF</h3>
+                        <h3 class="border-b mb-4 text-2xl">Brief</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus eveniet quos illo.
+                            Understand client needs and project goals to create a clear roadmap for the design process.
                         </p>
                     </div>
                 </div>
@@ -109,9 +135,9 @@
                 <div class="flex items-center gap-5 justify-end col-span-2">
                     <p class="text-2xl">02</p>
                     <div>
-                        <h3 class="border-b mb-4 text-2xl">RESEARCH</h3>
+                        <h3 class="border-b mb-4 text-2xl">Research</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus eveniet quos illo.
+                            Conduct in-depth research on user behavior, trends, and technologies to inform design decisions.
                         </p>
                     </div>
                 </div>
@@ -121,9 +147,9 @@
                 <div class="flex items-center gap-5 justify-end col-span-2">
                     <p class="text-2xl">03</p>
                     <div>
-                        <h3 class="border-b mb-4 text-2xl">PROTOTYPE</h3>
+                        <h3 class="border-b mb-4 text-2xl">Prototype</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus eveniet quos illo.
+                            Create wireframes and prototypes to test and refine the user experience before development.
                         </p>
                     </div>
                 </div>
@@ -133,9 +159,9 @@
                 <div class="flex items-center gap-5 justify-end col-span-2">
                     <p class="text-2xl">04</p>
                     <div>
-                        <h3 class="border-b mb-4 text-2xl">VISUAL CONCEPT</h3>
+                        <h3 class="border-b mb-4 text-2xl">Visual Concept</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus eveniet quos illo.
+                            Design visually appealing interfaces that align with the brand and user expectations.
                         </p>
                     </div>
                 </div>
@@ -145,52 +171,51 @@
                 <div class="flex items-center gap-5 justify-end col-span-2">
                     <p class="text-2xl">05</p>
                     <div>
-                        <h3 class="border-b mb-4 text-2xl">DEVELOPMENT</h3>
+                        <h3 class="border-b mb-4 text-2xl">Development</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus eveniet quos illo.
+                            Build responsive and functional websites using modern frontend technologies.
                         </p>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section id="projects" class="py-20">
         <div class="container">
-            <h1 class="text-3xl text-center">PROJECTS</h1>
-            <div class="mt-20 ">
+            <h2 class="text-3xl text-center">My Projects</h2>
+            <div class="mt-20">
                 <img class="w-60 h-100 rounded-lg"
                     src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg"
-                    alt="">
-                <h1 class="text-2xl">Peacock's feather</h1>
-                <p class="italic">Lorem ipsum</p>
+                    alt="Peacock's Feather Project" loading="lazy">
+                <h3 class="text-2xl">Peacock's Feather</h3>
+                <p class="italic">A vibrant web design inspired by the beauty of peacock feathers.</p>
             </div>
             <div class="mt-10 md:-mt-20 flex flex-col items-end">
                 <img class="w-60 h-100 rounded-lg"
                     src="https://images.unsplash.com/photo-1625421780346-1d2a60985e44?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG9vZGVkJTIwbWFufGVufDB8fDB8fHww"
-                    alt="">
-                <h1 class="text-2xl">Holi</h1>
-                <p class="italic">lorem ipsum</p>
+                    alt="Holi Project" loading="lazy">
+                <h3 class="text-2xl">Holi</h3>
+                <p class="italic">A colorful website celebrating the festival of Holi.</p>
             </div>
-            <div class="flex flex-col items-center mt-10 ">
+            <div class="flex flex-col items-center mt-10">
                 <img class="w-60 h-100 rounded-lg"
                     src="https://media.istockphoto.com/id/184103864/photo/clouds-on-sky.webp?a=1&b=1&s=612x612&w=0&k=20&c=Rns43dSWPSYJG75Ya-fdWj2NoY1yIE5NxzTSl1JDmfM="
-                    alt="">
-                <h1 class="text-2xl">Chamelion</h1>
-                <p class="italic">lorem ipsum</p>
+                    alt="Chameleon Project" loading="lazy">
+                <h3 class="text-2xl">Chameleon</h3>
+                <p class="italic">A dynamic website with adaptive design elements.</p>
             </div>
         </div>
     </section>
 
     <section id="pricing" class="py-20">
         <div class="container">
-            <h1 class="text-4xl text-center">PRICING</h1>
+            <h2 class="text-4xl text-center">Pricing</h2>
             <div class="text-right my-6">
-                <div class="flex items-center gap-5 justify-between ">
+                <div class="flex items-center gap-5 justify-between">
                     <p class="text-2xl italic text-gray-400">(01)</p>
                     <div>
-                        <h3 class="mb-4 text-2xl">LANDING PAGE</h3>
+                        <h3 class="mb-4 text-2xl">Landing Page</h3>
                     </div>
                     <p class="font-bold text-2xl">
                         +
@@ -199,10 +224,10 @@
                 <hr>
             </div>
             <div class="text-right my-6">
-                <div class="flex items-center gap-5 justify-between ">
+                <div class="flex items-center gap-5 justify-between">
                     <p class="text-2xl italic text-gray-400">(02)</p>
                     <div>
-                        <h3 class="mb-4 text-2xl">E-COMMERCE WEBSITE</h3>
+                        <h3 class="mb-4 text-2xl">E-Commerce Website</h3>
                     </div>
                     <p class="font-bold text-2xl">
                         +
@@ -211,10 +236,10 @@
                 <hr>
             </div>
             <div class="text-right my-6">
-                <div class="flex items-center gap-5 justify-between ">
+                <div class="flex items-center gap-5 justify-between">
                     <p class="text-2xl italic text-gray-400">(03)</p>
                     <div>
-                        <h3 class="mb-4 text-2xl">CORPORATE WEBSITE</h3>
+                        <h3 class="mb-4 text-2xl">Corporate Website</h3>
                     </div>
                     <p class="font-bold text-2xl">
                         +
@@ -222,48 +247,46 @@
                 </div>
                 <hr>
             </div>
-            
-            
         </div>
     </section>
 
     <section id="contact" class="bg-gradient-to-bl from-white to-yellow-100 py-20">
         <div class="container">
-            <h1 class="text-4xl text-center">CONTACT</h1>
+            <h2 class="text-4xl text-center">Contact Me</h2>
             <div class="text-end">
-                <a class="underline text-gray-400" href="#hero">Back to top</a>
+                <a class="underline text-gray-400" href="#hero" aria-label="Back to Top">Back to top</a>
             </div>
             <div class="flex justify-between">
                 <div class="mt-15">
-                    <p class="font-bold text-2xl mb-4">INTERESTED IN WORKING <br> TOGETHER ?</p>
-                    <p class="underline mb-20 text-gray-400">Get started!</p>
-                    <a href="mailto:nominglimbu.nl@gmail.com" class="font-mono text-2xl">
+                    <p class="font-bold text-2xl mb-4">Interested in Working Together?</p>
+                    <p class="underline mb-20 text-gray-400"><a href="#contact" aria-label="Get Started with Noming Limbu">Get started!</a></p>
+                    <a href="mailto:nominglimbu.nl@gmail.com" class="font-mono text-2xl" aria-label="Email Noming Limbu">
                         nominglimbu.nl@gmail.com
-                    </a>
-                    <a href="tel:9702637116" class="font-mono text-2xl">
+                    </a><br>
+                    <a href="tel:+9779702637116" class="font-mono text-2xl" aria-label="Call Noming Limbu">
                         +9779702637116
                     </a>
                 </div>
             </div>
             <div class="mt-20 flex justify-between gap-2">
-                <a class="text-lg md:text-2xl underline" href=""><i class="fa-brands fa-instagram"></i> INSTAGRAM</a>
-                <a class="text-lg md:text-2xl underline" href="">TELEGRAM</a>
-                <a class="text-lg md:text-2xl underline" href="">BEHANCE</a>
+                <a class="text-lg md:text-2xl underline" href="https://instagram.com" aria-label="Noming Limbu's Instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a class="text-lg md:text-2xl underline" href="https://telegram.org" aria-label="Noming Limbu's Telegram">Telegram</a>
+                <a class="text-lg md:text-2xl underline" href="https://behance.net" aria-label="Noming Limbu's Behance">Behance</a>
             </div>
         </div>
     </section>
 
-    <section id="footer" class="py-20">
+    <footer id="footer" class="py-20">
         <div class="container">
             <p class="font-mono py-20 text-4xl">
-                Thanks a lot for watching
+                Thanks a lot for visiting
             </p>
             <div class="flex gap-5 justify-center">
                 <p class="text-gray-400">Designer</p>
-                <p>Noming limbu</p>
+                <p>Noming Limbu</p>
             </div>
         </div>
-    </section>
+    </footer>
 
 </body>
 
